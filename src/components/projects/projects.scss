@@ -1,0 +1,70 @@
+.projects {
+    .projectCards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .project {
+        width: 25vw;
+        padding: 0 5px 5px 5px;
+        min-width: 20rem;
+        .css-1p3o6sg-JoyCard-root {
+            background-color: transparent;
+            color: #fff;
+            font-family: 'Nunito', 'Comfortaa', 'Arial Narrow Bold', sans-serif;
+            border-color: #ccc;
+        }
+        p {
+            min-height: 6em;
+        }
+        button {
+            background-color: transparent;
+            border: 0px solid #fff;
+            img {
+                transition: filter .3s ease;
+                cursor: pointer;
+                &:hover {
+                    filter: brightness(70%)
+                }
+            }
+            
+            
+
+        }
+    }
+}
+
+.wsModalContent, .awModalContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 80vw;
+    align-content: stretch;
+    img {
+        width: 20%;
+        height: 20%;
+        margin: .5em 1em 0 0;
+        transition: all .5s ease-in-out;
+        &:hover {
+            width: 30%;
+            height: 30%;
+        }
+    }
+}
+
+.MuiSheet-variantOutlined {
+    border-radius: 1.25em;
+}
+
+@media screen and (max-width: 1390px) {
+    .projects{
+        .projectCards {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+    }
+    // .wsModalContent, .awModalContent {
+    //     flex-direction: column;
+    // }
+  }

@@ -1,0 +1,13 @@
+.sidenav {
+    padding-top: 1em;
+    button {
+        display: block;
+        color: #fff;
+        border: 0px solid #fff;
+        transition: all .3s ease;
+        &:hover {
+            color: #111;
+        }
+    }
+}
+

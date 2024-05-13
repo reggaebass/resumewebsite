@@ -1,0 +1,14 @@
+.skills {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-height: 30vh;
+        li {
+            margin: 1em;
+            flex-grow: 1;
+        }
+    }
+   
+}

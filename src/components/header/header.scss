@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    &__logo {
+        width: 120px;
+        img{
+            height: 100px;
+    }
+    }
+    &__text {
+        width: 400px;
+        line-height: 10px;
+    }
+    h1 {
+        font-size: 2.5em;
+        font-weight: 200;
+    }
+}

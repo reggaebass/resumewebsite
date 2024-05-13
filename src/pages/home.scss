@@ -1,0 +1,88 @@
+.home {
+    margin: 2em 2em;
+    border-radius: 3em;
+    border: 3px solid #ccc;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px auto;
+    height: 90vh;
+    overflow: hidden;
+    .contactIcon {
+        padding: .5em;
+        a {
+            color: #fff;
+            font-size: 1.5em;
+            transition: color .3s ease;
+            &:hover {
+                color: #b0acc8;
+            }
+        }
+    }
+    .top {
+        grid-column: span 2;
+        max-height: 5em;
+    }
+    .left {
+        padding: 1em;
+    }
+    .right {
+        padding: 1em;
+        position: static;
+        .content {
+            height: 100%;
+            overflow: auto;
+            position: relative;
+            .experience, .about, .projects, .faq {
+                opacity: 1;
+                transition: opacity 1s ease;
+                position: absolute;
+                width: 100%;
+            }
+            .hidden {
+                opacity: 0;
+                height: 0;
+                transition: opacity 0s ease;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                left: -2000px;
+            }
+          }
+    }
+}
+
+.loader {
+    img {
+        position: fixed;
+        height: 100vh;
+        transition: opacity .5s ease, filter 2s ease, top 4.5s ease-out, left 4s ease-out, width 5s ease-in-out, height 5s ease-in-out;
+        height: 500px;
+        top: 10vw;
+        left: 30vw;
+        opacity: 0;
+        filter: grayscale(1);
+        width: 430px;
+        height: 402px;
+    }
+}
+
+.animate {
+    
+    img {
+        filter: grayscale(0);
+        opacity: 1;
+        top: 45px;
+        left: 45px;
+        height: 100px;
+        width: 110px;
+        height: 100px;
+    }
+}
+
+#loaderDiv, #homeDiv {
+    opacity: 1;
+    transition: opacity 1s ease;
+    &.hidden {
+        opacity: 0;
+    }
+}
