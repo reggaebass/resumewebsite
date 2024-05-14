@@ -86,3 +86,36 @@
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 490px) {
+    .home {
+        overflow: auto;
+        display: block;
+        .top {
+            display: block;
+        }
+        .left {
+            display : block;
+        }
+        .right {
+            padding: 1em;
+            position: unset;
+            .content {
+                padding: 1em;
+                .experience, .about, .projects, .faq {
+                    opacity: 1;
+                    transition: opacity 1s ease;
+                    max-width: 380px;
+                }
+                .hidden {
+                    opacity: 0;
+                    height: 0;
+                    transition: opacity 0s ease;
+                    margin: 0;
+                    padding: 0;
+                }
+              }
+        }
+    }
+    
+}

@@ -11,3 +11,12 @@
     }
 }
 
+@media screen and (max-width: 490px) {
+    .sidenav {
+        white-space: nowrap;
+        button {
+            display: inline;
+            padding: 0 .5em;
+        }
+    }
+}

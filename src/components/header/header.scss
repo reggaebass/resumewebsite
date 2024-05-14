@@ -19,3 +19,20 @@
         font-weight: 200;
     }
 }
+
+@media screen and (max-width: 490px){
+    .header {
+        &__text {
+            width: 100%;
+            line-height: normal;        }
+        h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        h2 {
+            font-size: .75em;
+            margin: 0;
+        }
+    }
+    
+}

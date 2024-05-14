@@ -12,3 +12,13 @@
     }
    
 }
+
+@media screen and (max-width: 490px){
+    .skills {
+        ul {
+            max-height: none;
+            flex-direction: row;
+
+        }
+    }
+}
