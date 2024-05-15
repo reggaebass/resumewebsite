@@ -1,16 +1,19 @@
 .experience {
     display: block;
-    // width: 70vw;
-    .css-1twr7re-JoyAccordionSummary-button, .css-m65nqi-JoyAccordionDetails-root, .css-1r2bn3-JoySvgIcon-root {
-        color: #fff;
-        font-family: 'Nunito', 'Comfortaa', 'Arial Narrow Bold', sans-serif;
-    }
+    button {
+        &:hover {
+            background-color: #787878 !important;
+        }
+    } 
     .role {
+        color: #fff;
         font-size: 1.25em;
         font-weight: bold;
     }
     .date {
+        color: #fff;
         margin-left: auto;
+       
     }
     .expAccordion {
         float: right;

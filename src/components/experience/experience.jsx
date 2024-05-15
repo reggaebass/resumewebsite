@@ -16,18 +16,18 @@ export const Experience = () => {
             <span className={`experience ${homepageState === 'experience' ? '' : 'hidden'}`}>
                 <h2>Work Experience</h2>
                 <span className='expAccordion'>
-                <AccordionGroup disableDivider sx={{ maxWidth: 1000 }}>
+                <AccordionGroup disableDivider sx={{ fontFamily: 'Nunito', color: 'neutral.800' }}>
                     <Accordion
                     expanded={index === 0}
                     onChange={(event, expanded) => {
                         setIndex(expanded ? 0 : null);
                     }}
                     >
-                        <AccordionSummary>
+                        <AccordionSummary sx={{color: 'primary'}}>
                             <span className='role'>Software Engineering Manager at Pillar Biosciences, Natick, MA</span>
                             <span className='date'>April 2022 — March 2024</span>
                         </AccordionSummary>
-                        <AccordionDetails>
+                        <AccordionDetails sx={{color: "#fff"}}>
                             <ul>
                                 <li>Managed and ran engineering team responsible for maintaining and building new features in multiple web applications.</li>
                                 <li>Led development of the web suite of a NGS pipeline application for cancer diagnosis.</li>
@@ -47,7 +47,7 @@ export const Experience = () => {
                             <span className='role'>Senior Software Engineer at Pillar Biosciences, Natick, MA</span>
                             <span className='date'>October 2021 — April 2022</span>
                         </AccordionSummary>
-                        <AccordionDetails>
+                        <AccordionDetails sx={{color: "#fff"}}>
                             <ul>
                                 <li>Led team developing a LIMS software solution for in house CLIA Lab</li>
                                 <li>Set up new webapp team including hiring and setting direction</li>
@@ -66,7 +66,7 @@ export const Experience = () => {
                             <span className='role'>Front End Engineer at One Door, South Boston, Ma</span>
                             <span className='date'>July 2015 — October 2021</span>
                         </AccordionSummary>
-                        <AccordionDetails>
+                        <AccordionDetails sx={{color: "#fff"}}>
                             <ul>
                                 <li>Worked as part of Engineering team on rails sass application with ember, elm and react front ends.</li>
                                 <li>Lead front end effort on development of new features</li>
@@ -92,7 +92,7 @@ export const Experience = () => {
                             <span className='role'>User Interface Designer at Aclara Technologies, Wellesley, Ma</span>
                             <span className='date'>June 2011 — July 2015</span>
                         </AccordionSummary>
-                        <AccordionDetails>
+                        <AccordionDetails sx={{color: "#fff"}}>
                             <ul>
                                 <li>Implemented client branding for sass application</li>
                                 <li>Build front end of new features</li>

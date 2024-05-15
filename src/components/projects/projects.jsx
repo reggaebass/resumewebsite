@@ -43,7 +43,12 @@ export const Projects = () => {
                     <p>Here are some of the projects I have worked on:</p>
                     <div className="projectCards">
                         <span className="project">
-                            <Card>
+                            <Card sx={{
+                               backgroundColor: 'transparent',
+                               color: '#fff',
+                               fontFamily: 'Nunito',
+                               borderColor: '#ccc'
+                            }}>
                                 <h3>Web Services</h3>
                                 <p>This section showcases examples of websites I've previously built, offering a glimpse into my portfolio and expertise in web development.</p>
                             <IconButton func={() => setOpenws(true)} alternate={`web services`} image={webServices}/>
@@ -70,7 +75,14 @@ export const Projects = () => {
                             </Modal>
                         </span>
                         <span className="project">
-                            <Card>
+                            <Card
+                            sx={{
+                                backgroundColor: 'transparent',
+                                color: '#fff',
+                                fontFamily: 'Nunito',
+                                borderColor: '#ccc'
+                             }}
+                            >
                                 <h3>Artwork</h3>
                                 <p>
                                     My fine arts education and design experience greatly enhance my career as a developer. Explore my portfolio for a selection of illustrations and other artwork.
@@ -94,7 +106,14 @@ export const Projects = () => {
                             </Modal>
                         </span>
                         <span className="project">
-                            <Card>
+                            <Card
+                            sx={{
+                                backgroundColor: 'transparent',
+                                color: '#fff',
+                                fontFamily: 'Nunito',
+                                borderColor: '#ccc'
+                             }}
+                            >
                                 <h3>Graphic Design</h3>
                                 <p>
                                     Before I became a developer, I worked as a graphic designer. This section showcases some of my previous work in that field.
