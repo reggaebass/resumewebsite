@@ -7,6 +7,7 @@
     grid-template-rows: 100px auto;
     height: 90vh;
     overflow: hidden;
+    position: relative;
     .contactIcon {
         padding: .5em;
         a {
@@ -49,6 +50,14 @@
             }
           }
     }
+    
+}
+.bg_canvas {
+    position: absolute;
+    z-index: -1;
+    .hidden {
+        opacity: 0;
+    }
 }
 
 .loader {
@@ -78,6 +87,14 @@
         height: 100px;
     }
 }
+
+.particle {
+    position: fixed;
+    pointer-events: none;
+    .hidden {
+        opacity: 0;
+    }
+};
 
 #loaderDiv, #homeDiv {
     opacity: 1;

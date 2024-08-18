@@ -1,11 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { Header } from "../components/header/header";
 import { Experience } from "../components/experience/experience";
 import { About } from "../components/about/about";
 import { Projects } from "../components/projects/projects";
 import { Faq } from "../components/faq/faq";
 import { Sidenav } from "../components/sidenav/sidenav";
-import { HomepageProvider } from "../context/context";
+import { HomepageProvider, HomepageContext } from "../context/context";
+import { Particle } from "../components/particle/particle";
+import { Waveform } from "../components/waveform/waveform";
+
 import logo from '../assets/MESlogo-01.png';
 import "./home.scss";
 
@@ -45,7 +48,7 @@ export const Home = () => {
         switchVisibility('loaderDiv', 'homeDiv');
     }, []); 
 
-
+    
   return (
     <>
         <div className="loader" id="loaderDiv">
@@ -53,6 +56,9 @@ export const Home = () => {
         </div>
         <div className="home" id='homeDiv'>
             <HomepageProvider>
+                <div className="particle">
+                    <Particle />  
+                </div>
                 <span className="top">
                     <Header />
                 </span>
@@ -67,6 +73,9 @@ export const Home = () => {
                         <Faq />
                     </div>
                 </span>
+                <span className="bg_canvas">
+                    <Waveform />
+                </span>    
             </HomepageProvider>
         </div>
     </>
