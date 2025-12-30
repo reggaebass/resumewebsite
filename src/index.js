@@ -5,6 +5,7 @@ import { Home } from './pages/home';
 import { HomepageProvider } from './context/context';
 import "@fontsource/comfortaa";
 import "@fontsource/nunito";
+import '@fontsource-variable/space-grotesk';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

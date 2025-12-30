@@ -18,7 +18,7 @@ export const Header = () => {
             </div>
             <div className="header__text">
                 <h1>Marc Elliot Smith</h1>
-                <h2>Senior Software Engineer</h2>
+                <h3>Software Engineer/ Code Monkey</h3>
             </div>
             <div className="header__buttons">
                 <span className={"effects"} onClick={() => handleClick()}>

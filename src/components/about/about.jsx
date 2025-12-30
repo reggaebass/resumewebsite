@@ -15,11 +15,7 @@ export const About = () => {
         <div className={`about ${homepageState === 'about' ? '' : 'hidden'}`}>
             <div>
                 <p>
-                    Throughout my career spanning over 12 years, I've been deeply immersed in the world of Front End Engineering, 
-                    particularly within the realm of SAAS applications across diverse industries. From inception to execution, 
-                    I've steered numerous projects to completion, wielding a blend of comprehensive front end strategies and 
-                    long-term foresight. My strengths lie in establishing user-friendly design systems, spearheading high-performing 
-                    teams, and unraveling complex problems, all while serving as a guiding mentor to junior engineers
+                    I’m a full-stack software engineer with years of experience building and scaling modern SaaS platforms across complex and regulated domains. I’ve worked end-to-end on distributed systems, APIs, and user-facing applications, supporting data-intensive workflows, healthcare technologies, AI-enabled features, and laboratory systems. I bring a strong systems and architecture mindset, with experience in cloud-based platforms, system integration, performance, security, and maintainability. I enjoy leading teams, mentoring engineers, and delivering reliable, scalable software that aligns technical strategy with real business needs.
                 </p>
                 <span className='skills'>
                     <h3>Skills</h3>
@@ -34,13 +30,16 @@ export const About = () => {
                         <li>Git</li>
                         <li>Confluence</li>
                         <li>JIRA</li>
+                        <li>Azure Devops</li>
                         <li>Cypress</li>
                         <li>Jest</li>
+                        <li>Playwright</li>
                         <li>AWS</li>
+                        <li>Dot Net</li> 
                         <li>Python</li>
                         <li>Ruby</li>
                         <li>CI/CD</li>
-
+                        
                     </ul>
                 </span>
                 <span className='contact'>

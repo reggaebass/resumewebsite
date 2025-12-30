@@ -24,6 +24,29 @@ export const Experience = () => {
                     }}
                     >
                         <AccordionSummary sx={{color: 'primary'}}>
+                            <span className='role'>Nova AI Senior Software Engineer Front End at Olympus of America, Westborough, MA</span>
+                            <span className='date'>November 2024 — Current</span>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{color: "#fff"}}>
+                            <ul>
+                                <li>Worked with large team in a micro-services framework to implement firmware of a medical device.</li>
+                                <li>Created a bespoke solution for loading and running multiple AI models on the device.</li>
+                                <li>Built one of the first applications at Olympus to use the in house design system.</li>
+                                <li>Implemented a react front end with both rest api and streaming grpc connections as part of AI service.</li>
+                                <li>Implemented and configured playwright for integration testing.</li>
+                                <li>Implemented and configured vitest for unit testing.</li>
+                                <li>Consulted with testing and requirements teams to ensure all verification critera are met.</li>
+                                <li>Consulted with UX and Product for the devopment of new features.</li>
+                            </ul>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion
+                    expanded={index === 1}
+                    onChange={(event, expanded) => {
+                        setIndex(expanded ? 1 : null);
+                    }}
+                    >
+                        <AccordionSummary sx={{color: 'primary'}}>
                             <span className='role'>Software Engineering Manager at Pillar Biosciences, Natick, MA</span>
                             <span className='date'>April 2022 — March 2024</span>
                         </AccordionSummary>
@@ -38,9 +61,9 @@ export const Experience = () => {
                         </AccordionDetails>
                     </Accordion>
                     <Accordion
-                        expanded={index === 1}
+                        expanded={index === 2}
                         onChange={(event, expanded) => {
-                            setIndex(expanded ? 1 : null);
+                            setIndex(expanded ? 2 : null);
                         }}
                     >
                         <AccordionSummary>
@@ -57,9 +80,9 @@ export const Experience = () => {
                         </AccordionDetails>
                     </Accordion>
                     <Accordion
-                            expanded={index === 2}
+                            expanded={index === 3}
                             onChange={(event, expanded) => {
-                            setIndex(expanded ? 2 : null);
+                            setIndex(expanded ? 3 : null);
                             }}
                     >
                         <AccordionSummary>
@@ -83,9 +106,9 @@ export const Experience = () => {
                         </AccordionDetails>
                     </Accordion>
                     <Accordion
-                            expanded={index === 3}
+                            expanded={index === 4}
                             onChange={(event, expanded) => {
-                                setIndex(expanded ? 3 : null);
+                                setIndex(expanded ? 4 : null);
                             }}
                     >
                         <AccordionSummary>

@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  /* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; */
-  font-family: 'Nunito', 'Comfortaa', 'Arial Narrow Bold', sans-serif;
+  font-family: 'Space Grotesk Variable', 'Nunito', 'Comfortaa', 'Arial Narrow Bold', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #555;
